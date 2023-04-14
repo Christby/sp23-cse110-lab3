@@ -2,95 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HTML tags</title>
+    <title>Meeting Minutes</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
     <header>
-        <h1>HTML tags</h1>
+        <h1>Pomodoro Timer First Brainstorm</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="nothing.html">About</a></li>
+                <li><a href="nothing.html">More</a></li>
             </ul>
         </nav>
     </header>
     <hr>
     <main>
         <section>
-            <h2>this is the heading for this section</h2>
-            <p><b>this</b> is the <strong>p</strong> tag</p>
-            <br>
+            <h2>Section 1: Brainstroming</h2>
+            <h3>The <b>date</b> for this <strong>section</strong> is:</h3>
+            <input type="date" id="date" name="date"><br><br>
+            <p>Attendance list:</p>
+            <ul>
+                <li>John</li>
+                <li>Paul</li>
+                <li>George</li>
+            </ul>
             <div>
-                <span>Here are some <em>images and multimedias</em> contained in a <i>div tag</i></span>
+                <p><span>Here is the <em>agenda</em> of this <i>meeting</i></span></p>
                 <ol>
-                    <li>
-                        <img src="IMG_5555.jpg" alt="this is a picture that shows the proper use of img tag" width="200" height="100">
-                    </li>
-                    <li>
-                        <audio controls>
-                            <source src="SayHi.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </li>
-                    <li>
-                        <video width="300" height="150" controls>
-                            <source src="IMG_3519.mp4" type="video/mp4">
-                            Your browser does not support the video element.
-                        </video>
-                    </li>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
                 </ol>
             </div>
         </section>
+        <section>
+            <h2>Section 2: </h2>
+        </section>
+        <section>
+            <h2>Section 3: </h2>
+        </section>
+        <br><br>
         <details>
-            <summary>Here is a summary</summary>
-            <p>Here is the details</p>
+            <summary>Here are the unfinished businesses from last meeting</summary>
+            <p>unfinished businesses</p>
         </details>
-        <br>
-        <h3>Here is a form</h3>
+        <details>
+            <summary>Here are new businesses we need to talk about</summary>
+            <p>new businesses</p>
+        </details>
+        <p>Important diagrams for this meeting:</p>
+        <img src="IMG_5555.jpg" alt="this is a picture that shows the proper use of img tag" width="200" height="100">
+        <p>Audio Recording for this meeting:</p>
+        <audio controls>
+            <source src="SayHi.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <p>Video Recording for this meeting:</p>
+        <video width="300" height="150" controls>
+            <source src="IMG_3519.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </main>
+    <hr>
+    <footer>
+        <h2>Here is the reflection area for this meeting</h2>
         <form action="/action_page.php">
             <fieldset>
-                <p><label for="comment">This is a text area:</label></p>
+                <p><label for="comment">Comments for this meeting:</label></p>
                 <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+                <br><br>
+                <p>Please give a rating for this meeting:</p>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">Good</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">Average</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">Bad</label>
+                <br><br>
+                <label for="select">Select your favorite topic for this meeting:</label>
+                <select id="select" name="select">
+                    <option value="farari">section 1</option>
+                    <option value="mercedes">section 2</option>
+                    <option value="audi">section 3</option>
+                </select>
+                <br><br>
+                <label for="car">What do you want to include in future meetings:</label>
+                <input list="cars" name="car" id="car">
+                <datalist id="cars">
+                    <option value="matter 1">
+                    <option value="matter 2">
+                    <option value="matter 3">
+                </datalist>
                 <br><br>
                 <label for="fname">First name:</label>
                 <input type="text" id="fname" name="fname"><br><br>
                 <label for="lname">Last name:</label>
                 <input type="text" id="lname" name="lname"><br><br>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date"><br><br>
-                <label for="check">Check box:</label>
+                <label for="check">Confirm your response</label>
                 <input type="checkbox" id="check" name="check"><br><br>
-                <p>Please select your favorite Web language:</p>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html">HTML</label><br>
-                <input type="radio" id="css" name="fav_language" value="CSS">
-                <label for="css">CSS</label><br>
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">JavaScript</label>
-                <label for="select">Select:</label>
-                <br><br>
-                <p>Select your favorite car:</p>
-                <select id="select" name="select">
-                    <option value="farari">Farari</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                </select>
-                <br><br>
-                <label for="car">Choose your car from the list:</label>
-                <input list="cars" name="car" id="car">
-                <datalist id="cars">
-                    <option value="Farari">
-                    <option value="Mercedes">
-                    <option value="Audi">
-                </datalist>
                 <button onclick="alert('thank you for your submission')">Submit</button>
             </fieldset>
         </form>
-    </main>
-    <hr>
-    <footer>
-        <p>Here is the footer</p>
     </footer>
 </body>
 </html>
