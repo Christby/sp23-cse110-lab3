@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-## https://christby.github.io/Lab2_Starter/
+# Lab 3
+## GitHub Page URL: https://christby.github.io/sp23-cse110-lab3/
