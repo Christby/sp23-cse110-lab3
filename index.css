@@ -22,7 +22,7 @@ nav {
 
 a[id] {
     color: white;
-    font-size: 1.6em;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: normal;
     transition-duration: 1s;
@@ -44,7 +44,7 @@ nav .nav-list {
 nav .nav-list .nav-item {
     height: 100%;
     transition-duration: 0.5s;
-    padding: 0px 20px;
+    padding: 0pt 20px;
 }
 
 nav .nav-list .nav-item:hover {
@@ -62,7 +62,7 @@ section {
     border-style: double;
     border-width: 10px;
     border-color: rgb(146, 230, 230);
-    border-radius: 20px;
+    border-radius: 20pt;
     margin: 20px 15px 20px 15px;
     padding: 15px;
     background-color: azure;
@@ -75,7 +75,7 @@ section {
     align-items: center;
     gap: 10%;
     border: 5px solid rgb(123, 161, 238);
-    border-radius: 20px;
+    border-radius: 2cm;
     background-color: whitesmoke;
 }
 
