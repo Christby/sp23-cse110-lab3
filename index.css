@@ -1,0 +1,131 @@
+* {
+    text-decoration: none;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: 4.5em;
+    line-height: 4.5em;
+    background: hsla(190, 80%, 50%, 0.9);
+}
+
+a[id] {
+    color: white;
+    font-size: 1.6em;
+    font-weight: 700;
+    letter-spacing: normal;
+    transition-duration: 1s;
+}
+
+a[id]:hover {
+    transform: rotateY(30deg);
+}
+
+nav .nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20%;
+    list-style: none;
+}
+
+nav .nav-list .nav-item {
+    height: 100%;
+    transition-duration: 0.5s;
+    padding: 0px 20px;
+}
+
+nav .nav-list .nav-item:hover {
+    background: rgb(227, 244, 244);
+}
+
+.nav-item a{
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+section {
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(146, 230, 230);
+    border-radius: 20px;
+    margin: 20px 15px 20px 15px;
+    padding: 15px;
+    background-color: azure;
+}
+
+.afterNotes {
+    font-family: "Trirong", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10%;
+    border: 5px solid rgb(123, 161, 238);
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+details {
+    margin: 20px 15px 20px 15px;
+    padding: 15px;
+    position: relative;
+    max-width: 60ch;
+    text-align: center;
+    align-items: center;
+}
+
+.recordings {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+    border: 5px solid #0e799d;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.recordings > div {
+    margin: auto;
+    justify-content: center;
+    border: 2px solid gray;
+    border-radius: 2pt;
+    padding: 2px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+@media (max-width: 640px) {
+    .recordings {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid #0e799d;
+        border-radius: 20px;
+        margin-top: 30px;
+    }
+
+    .recordings > div {
+        margin: auto;
+        padding: 5px;
+    }
+}
+
+button:active {
+    display: none;
+}

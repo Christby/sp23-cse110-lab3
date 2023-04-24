@@ -2,21 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            font-family: "Times New Roman", Times, serif;
+            color: #000050;
+            margin-top: 100px
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <div id="nav-bar">
+            <nav>
+                <a id="nav-name" href="#">Team Name</a>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="nothing.html">More</a></li>
+                </ul>
+            </nav>
+        </div>
         <h1>Pomodoro Timer First Brainstorm</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nothing.html">More</a></li>
-            </ul>
-        </nav>
     </header>
-    <hr>
     <main>
         <section>
             <h2>Section 1: Brainstroming</h2>
@@ -44,29 +60,37 @@
             <h2>Section 3: </h2>
         </section>
         <br><br>
-        <details>
-            <summary>Here are the unfinished businesses from last meeting</summary>
-            <p>unfinished businesses</p>
-        </details>
-        <details>
-            <summary>Here are new businesses we need to talk about</summary>
-            <p>new businesses</p>
-        </details>
-        <p>Important diagrams for this meeting:</p>
-        <img src="IMG_5555.jpg" alt="this is a picture that shows the proper use of img tag" width="200" height="100">
-        <p>Audio Recording for this meeting:</p>
-        <audio controls>
-            <source src="SayHi.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-        <p>Video Recording for this meeting:</p>
-        <video width="300" height="150" controls>
-            <source src="IMG_3519.mp4" type="video/mp4">
-            Your browser does not support the video element.
-        </video>
+        <div class="afterNotes">
+            <details class="d1">
+                <summary>Here are the unfinished businesses from last meeting</summary>
+                <p>unfinished businesses</p>
+            </details>
+            <details class="d2">
+                <summary>Here are new businesses we need to talk about</summary>
+                <p>new businesses</p>
+            </details>
+            <p>Important diagrams for this meeting:</p>
+            <img src="IMG_5555.jpg" alt="this is a picture that shows the proper use of img tag" width="200" height="100">
+        </div>
+        <div class="recordings">
+            <p>Audio Recording for this meeting:</p>
+            <div>
+                <audio controls>
+                    <source src="SayHi.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <p>Video Recording for this meeting:</p>
+            <div>
+                <video width="300" height="150" controls>
+                    <source src="IMG_3519.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        </div>
     </main>
     <hr>
-    <footer>
+    <footer style="background-color: aliceblue">
         <h2>Here is the reflection area for this meeting</h2>
         <form action="/action_page.php">
             <fieldset>
